@@ -1,0 +1,15 @@
+Describe: ChessPiece.QueenAttack()
+Test: "Should return true if newQueen.yCoord == newRandomPiece.yCoord
+Expect: Assert.AreEqual(true, newQueen.yCoord == newRandomPiece.yCoord);
+
+
+Test: 
+Expect: 
+Test: 
+Expect: 
+Test: 
+Expect: 
+Test: 
+Expect: 
+Test: 
+Expect: 
