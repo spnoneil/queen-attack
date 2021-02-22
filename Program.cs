@@ -17,6 +17,15 @@ namespace Game
 
       ChessPiece newQueen = new ChessPiece(queenXCoord, queenYCoord);
       ChessPiece newRandomPiece = new ChessPiece(chessXCoord, chessYCoord);
+      bool yesAttack = newQueen.QueenAttack(newQueen.YCoord, newQueen.XCoord, newRandomPiece.YCoord, newRandomPiece.XCoord);
+      if (yesAttack == true)
+      {
+        Console.WriteLine("Your queen can attack!");
+      }
+      else
+      {
+        Console.WriteLine("Sorry, no attack can be made there, champ");
+      }
     }
 
     public static int coordinatePrompt(string coordinate, string chessPiece) {
@@ -30,5 +39,6 @@ namespace Game
       return numCoordinate;
     }
   }
+
 }
 
